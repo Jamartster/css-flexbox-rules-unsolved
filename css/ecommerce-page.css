@@ -37,9 +37,12 @@ section {
 }
 
 .header-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-search {
+  display: flex;
 }
 
 .logo {
@@ -47,6 +50,7 @@ section {
   font-size: 28px;
   font-weight: 900;
   font-family: "Caveat", sans-serif;
+  padding-right: 70px;
 }
 
 .search-bar {
@@ -54,6 +58,7 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
 }
 
 .search-bar input {
@@ -71,12 +76,18 @@ section {
 }
 
 .options {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .option {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .option i {
@@ -87,6 +98,9 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .category {
@@ -185,7 +199,7 @@ i.fa-th-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 .grid .product {
@@ -204,11 +218,15 @@ i.fa-th-list {
 .grid .product-info {
   text-align: center;
   padding: 0 20px 30px;
+  height: 158px;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .view-options {
@@ -219,27 +237,43 @@ i.fa-th-list {
 
 .section-control {
   display: flex;
+  justify-content: space-between;
+}
+
+#product-container {
+  gap: 30px;
   justify-content: flex-start;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
 }
 
 .lines .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  padding-right: 30px;
 }
 
 .lines .product-data {
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.lines .product-description {
+  display: flex;
+  padding: 30px 0 20px 0;
 }
 
 .lines .product-action {
@@ -248,24 +282,44 @@ i.fa-th-list {
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
 }
 
 .lines-action .product {
+  display: flex;
 }
 
 .lines-action .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  padding: 20px;
 }
 
 .lines-action .product-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lines-action .product-description {
+  padding-top: 20px;
+}
+
+.lines-action .product-price {
+  padding-bottom: 30px;
 }
